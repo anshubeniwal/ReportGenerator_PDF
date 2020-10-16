@@ -1,0 +1,1613 @@
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+
+/**
+* Correct `block` display not defined in IE 8/9.
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+* Correct `inline-block` display not defined in IE 8/9.
+*/
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+* Address styling not present in IE 8/9.
+*/
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+Base
+========================================================================== */
+
+/**
+* 1. Prevent system color scheme's background color being used in Firefox, IE,
+* and Opera.
+* 2. Prevent system color scheme's text color being used in Firefox, IE, and
+* Opera.
+* 3. Set default font family to sans-serif.
+* 4. Prevent iOS text size adjust after orientation change, without disabling
+* user zoom.
+*/
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-family: sans-serif; /* 3 */
+    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+* Remove default margin.
+*/
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+Links
+========================================================================== */
+
+/**
+* Address `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+* Improve readability when focused and also mouse hovered in all browsers.
+*/
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+/**
+* Address variable `h1` font-size and margin within `section` and `article`
+* contexts in Firefox 4+, Safari 5, and Chrome.
+*/
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+* Address styling not present in IE 8/9, Safari 5, and Chrome.
+*/
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+*/
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+* Address styling not present in Safari 5 and Chrome.
+*/
+
+dfn {
+    font-style: italic;
+}
+
+/**
+* Address differences between Firefox and other browsers.
+*/
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+* Address styling not present in IE 8/9.
+*/
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+* Correct font family set oddly in Safari 5 and Chrome.
+*/
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+* Improve readability of pre-formatted text in all browsers.
+*/
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+* Set consistent quote types.
+*/
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+* Address inconsistent and variable font size in all browsers.
+*/
+
+small {
+    font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` affecting `line-height` in all browsers.
+*/
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+Embedded content
+========================================================================== */
+
+/**
+* Remove border when inside `a` element in IE 8/9.
+*/
+
+img {
+    border: 0;
+}
+
+/**
+* Correct overflow displayed oddly in IE 9.
+*/
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+Figures
+========================================================================== */
+
+/**
+* Address margin not present in IE 8/9 and Safari 5.
+*/
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+Forms
+========================================================================== */
+
+/**
+* Define consistent border, margin, and padding.
+*/
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+* 1. Correct `color` not being inherited in IE 8/9.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets.
+*/
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+* 1. Correct font family not being inherited in all browsers.
+* 2. Correct font size not being inherited in all browsers.
+* 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+*/
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+* Address Firefox 4+ setting `line-height` on `input` using `!important` in
+* the UA stylesheet.
+*/
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+* Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+* Correct `select` style inheritance in Firefox 4+ and Opera.
+*/
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+* and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+* `input` and others.
+*/
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+* 1. Address box sizing set to `content-box` in IE 8/9.
+* 2. Remove excess padding in IE 8/9.
+*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+* (include `-moz` to future-proof).
+*/
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+* Remove inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+* Remove inner padding and border in Firefox 4+.
+*/
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+* 1. Remove default vertical scrollbar in IE 8/9.
+* 2. Improve readability and alignment in all browsers.
+*/
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+Tables
+========================================================================== */
+
+/**
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.Table-Content table
+{
+	width: 100%;
+	border-width: 0;
+	border-collapse:collapse;	
+}
+
+
+
+.tr-spacer
+{
+	height: 4px;
+}
+
+.tr-tag
+{
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:0;
+	border-color: #073642
+}
+
+
+
+body
+{
+	font-family: Verdana;
+	font-size: 11pt;
+	color: #073642;
+}
+
+.container
+{
+	position: relative;
+	padding: 0 0 0 24px;
+	margin: 4px 0 0 0;
+	border-style:solid;
+	border-width:1px;
+	border-color: #073642;
+	overflow: hidden;
+}
+.container:first-child
+{
+	position: relative;
+	padding: 0 0 0 24px;
+	margin: 0 0 0 0;
+	border: 0 0 0 0;
+	border-style:solid;
+	border-width:1px;
+	border-color: #073642;
+	overflow: hidden;
+}
+
+.tag
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 24px;
+	height: 82px;
+	background-image: url(../img/tag-captions.png);
+	background-repeat: no-repeat;
+}
+
+.digit-1-0
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -216px 0;
+}
+
+.digit-1-1
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -192px 0;
+}
+
+.digit-1-2
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -168px 0;
+}
+
+.digit-1-3
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -144px 0;
+}
+
+.digit-1-4
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -120px 0;
+}
+
+.digit-1-5
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -96px 0;
+}
+
+.digit-1-6
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -72px 0;
+}
+
+.digit-1-7
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -48px 0;
+}
+
+.digit-1-8
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -24px 0;
+}
+
+.digit-1-9
+{
+	position: absolute;
+	left: 0px;
+	top: 16px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: 0 0;
+}
+
+.digit-2-0
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -216px 0;
+}
+
+.digit-2-1
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -192px 0;
+}
+
+.digit-2-2
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -168px 0;
+}
+
+.digit-2-3
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -144px 0;
+}
+
+.digit-2-4
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -120px 0;
+}
+
+.digit-2-5
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -96px 0;
+}
+
+.digit-2-6
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -72px 0;
+}
+
+.digit-2-7
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -48px 0;
+}
+
+.digit-2-8
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -24px 0;
+}
+
+.digit-2-9
+{
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: 0 0;
+}
+
+.digit-3-0
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -216px 0;
+}
+
+.digit-3-1
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -192px 0;
+}
+
+.digit-3-2
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -168px 0;
+}
+
+.digit-3-3
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -144px 0;
+}
+
+.digit-3-4
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -120px 0;
+}
+
+.digit-3-5
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -96px 0;
+}
+
+.digit-3-6
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -72px 0;
+}
+
+.digit-3-7
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -48px 0;
+}
+
+.digit-3-8
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: -24px 0;
+}
+
+.digit-3-9
+{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	width: 24px;
+	height: 8px;
+	background-image: url(../img/digits_vertical.png);
+	background-position: 0 0;
+}
+
+.content
+{
+	background-color: #586e75;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	min-height: 24px;
+
+}
+
+.Table-Content
+{
+	padding: 0;
+}
+
+.inline-start
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline;
+	background-image: url(../img/start-tag.png);
+	color: #c5d9d9;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 22px;
+	margin: 1px;
+}
+
+.inline-end
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline;
+	background-image: url(../img/end-tag.png);
+	color: #c5d9d9;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 18px;
+	margin: 1px;
+	white-space: pre;
+}
+
+.inline-block
+{
+	display: inline-block;
+}
+
+
+.unknown
+{
+	background-color: #32535d;
+}
+
+.Document
+{
+	background-color: #32535d;
+}
+
+.Part
+{
+	background-color: #32535d;
+}
+
+.Art
+{
+	background-color: #32535d;
+}
+
+.Sect
+{
+	background-color: #32535d;
+}
+
+.Div
+{
+	background-color: #32535d;
+}
+
+.Caption
+{
+	background-color: #cb4b16;
+}
+
+.TOC
+{
+	background-color: #268bd2;
+}
+
+.TOCI
+{
+	background-color: #268bd2;
+}
+
+
+.H
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H1
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H2
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H3
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H4
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H5
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.H6
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.Hn
+{
+	margin-top: 24px;
+	background-color: #dc322f;
+}
+
+.P
+{
+	background-color: #859900;
+}
+
+.L
+{
+	background-color: #268bd2;
+}
+
+.LI
+{
+	background-color: #268bd2;
+}
+
+.Lbl
+{
+	background-color: #268bd2;
+}
+
+.LBody
+{
+	background-color: #268bd2;
+}
+
+.Table
+{
+	background-color: #6c71c4;
+	width: auto;
+	
+}
+
+.BlockQuote
+{
+	background-color: #2aa198;
+}
+
+.Form
+{
+	background-color: #d33682;
+}
+
+.Span
+{
+	background-color: #2aa198;
+}
+
+.Quote
+{
+	background-color: #2aa198;
+}
+
+.Note
+{
+	background-color: #2aa198;
+}
+
+.Reference
+{
+	background-color: #2aa198;
+}
+
+.BibEntry
+{
+	background-color: #2aa198;
+}
+
+.Code
+{
+	background-color: #2aa198;
+}
+
+.Link
+{
+	background-color: #2aa198;
+}
+
+.Annot
+{
+	background-color: #2aa198;
+}
+
+.TR
+{
+	background-color: #6c71c4;
+	background-image: url(../img/tag-captions.png);
+	background-position: -551px 0;
+	background-repeat: no-repeat;
+	width: 22px;
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-color: #073642;
+}
+
+.THead
+{
+	background-color: #6c71c4;
+	background-image: url(../img/tag-captions.png);
+	background-position: -479px 0;
+	background-repeat: no-repeat;
+	width: 22px;
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:0;
+	border-color: #073642;
+}
+
+.TBody
+{
+	background-color: #6c71c4;
+	background-image: url(../img/tag-captions.png);
+	background-position: -455px 0;
+	background-repeat: no-repeat;
+	width: 22px;
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:0;
+	border-color: #073642;
+}
+
+.TFoot
+{
+	background-color: #6c71c4;
+	background-image: url(../img/tag-captions.png);
+	background-position: -431px 0;
+	background-repeat: no-repeat;
+	width: 22px;
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:0;
+	border-color: #073642;
+}
+
+.tr-cell-first
+{
+	background-color: #6c71c4;
+	position: relative;
+	overflow: hidden;
+
+	margin: 0 0 0 0;
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-color: #073642;
+	padding: 0 0 0 0;
+	vertical-align: top;
+	width: 24px;
+}
+
+.embedded-caption-top
+{
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+
+.embedded-caption-bottom
+{
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 0;
+	padding-bottom: 4px;
+}
+
+.TH
+{
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-color: #073642;
+	padding: 4px 4px 4px 28px;
+	vertical-align: top;
+	background-color: #d3d4ed;
+	background-image: url(../img/bg-cell.png);
+	background-repeat: repeat-y;
+	font-weight: bold;
+}
+
+.TD
+{
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-color: #073642;
+	padding: 4px 4px 4px 28px;
+	vertical-align: top;
+	background-color: #d3d4ed;
+	background-image: url(../img/bg-cell.png);
+	background-repeat: repeat-y;
+}
+
+.Figure
+{
+	background-color: #b58900;
+}
+
+.Formula
+{
+	background-color: #b58900;
+}
+
+.ALT-container
+{
+	margin: 1px 0 0 0;
+}
+
+.ALT-Tag
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 24px;
+	height: 82px;
+	background-image: url(../img/Alt-vertical.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+
+.unknown-Tag
+{
+	background-position: 24px 0;
+}
+
+.Document-Tag
+{
+	background-position: -1007px 0;
+}
+
+.Part-Tag
+{
+	background-position: -983px 0;
+}
+
+.Art-Tag
+{
+	background-position: -959px 0;
+}
+
+.Sect-Tag
+{
+	background-position: -935px 0;
+}
+
+.Div-Tag
+{
+	background-position: -911px 0;
+}
+
+.BlockQuote-Tag
+{
+	background-position: -887px 0;
+}
+
+.Caption-Tag
+{
+	background-position: -863px 0;
+}
+
+.TOC-Tag
+{
+	background-position: -839px 0;
+}
+
+.TOCI-Tag
+{
+	background-position: -815px 0;
+}
+
+.Index-Tag
+{
+	background-position: -791px 0;
+}
+
+.NonStruct-Tag
+{
+	background-position: -767px 0;
+}
+
+.Private-Tag
+{
+	background-position: -743px 0;
+}
+
+.H-Tag
+{
+	background-position: -719px 0;
+}
+
+.H1-Tag
+{
+	background-position: -719px 0;
+}
+
+.H2-Tag
+{
+	background-position: -719px 0;
+}
+
+.H3-Tag
+{
+	background-position: -719px 0;
+}
+
+.H4-Tag
+{
+	background-position: -719px 0;
+}
+
+.H5-Tag
+{
+	background-position: -719px 0;
+}
+
+.H6-Tag
+{
+	background-position: -719px 0;
+}
+
+.Hn-Tag
+{
+	background-position: -719px 0;
+}
+
+.P-Tag
+{
+	background-position: -695px 0;
+}
+
+.L-Tag
+{
+	background-position: -671px 0;
+}
+
+.LI-Tag
+{
+	background-position: -647px 0;
+}
+
+.Lbl-Tag
+{
+	background-position: -623px 0;
+}
+
+.LBody-Tag
+{
+	background-position: -599px 0;
+}
+
+.Table-Tag
+{
+	background-position: -575px 0;
+}
+
+.TR-Tag
+{
+	background-position: -551px 0;
+}
+
+.TH-Tag
+{
+	background-position: -527px 0;
+}
+
+.TD-Tag
+{
+	background-position: -503px 0;
+}
+
+.THead-Tag
+{
+	background-position: -479px 0;
+}
+
+.TBody-Tag
+{
+	background-position: -455px 0;
+}
+
+.TFoot-Tag
+{
+	background-position: -431px 0;
+}
+
+.Figure-Tag
+{
+	background-position: -407px 0;
+}
+
+.Formula-Tag
+{
+	background-position: -383px 0;
+}
+
+.Form-Tag
+{
+	background-position: -359px 0;
+}
+
+.Span-Tag
+{
+	background-position: -335px 0;
+}
+
+.Quote-Tag
+{
+	background-position: -311px 0;
+}
+
+.Note-Tag
+{
+	background-position: -287px 0;
+}
+
+.Reference-Tag
+{
+	background-position: -263px 0;
+}
+
+.BibEntry-Tag
+{
+	background-position: -239px 0;
+}
+
+.Code-Tag
+{
+	background-position: -215px 0;
+}
+
+.Link-Tag
+{
+	background-position: -191px 0;
+}
+
+.Annot-Tag
+{
+	background-position: -167px 0;
+}
+
+.Ruby-Tag
+{
+	background-position: -143px 0;
+}
+
+.RB-Tag
+{
+	background-position: -119px 0;
+}
+
+.RT-Tag
+{
+	background-position: -95px 0;
+}
+
+.RP-Tag
+{
+	background-position: -71px 0;
+}
+
+.Warichu-Tag
+{
+	background-position: -47px 0;
+}
+
+.WT-Tag
+{
+	background-position: -23px 0;
+}
+
+.WP-Tag
+{
+	background-position: -1px 0;
+}
+
+.Caption-Content
+{
+	background-color: #efc9b9;
+}
+
+.P-Content
+{
+	background-color: #dae0b3;
+}
+
+.H-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+}
+
+.H1-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 32pt;
+}
+
+.H2-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 28pt;
+}
+
+.H3-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 24pt;
+}
+
+.H4-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.H5-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+.H6-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.Hn-Content
+{
+	background-color: #f5c2c1;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+.TOC-Content
+{
+	background-color: #bedcf2;
+}
+
+.TOCI-Content
+{
+	background-color: #bedcf2;
+}
+
+.L-Content
+{
+	background-color: #0063a5;
+}
+
+.LI-Content
+{
+	background-color: #bedcf2;
+}
+
+.Lbl-Content
+{
+	background-color: #bedcf2;
+}
+
+.LBody-Content
+{
+	background-color: #bedcf2;
+}
+
+.Table-Content
+{
+	background-color: #434c9b;
+}
+
+.TR-Content
+{
+	background-color: #434c9b;
+}
+
+.TH-Content
+{
+	background-color: #d3d4ed;
+	font-weight: bold;
+}
+
+.TD-Content
+{
+	background-color: #d3d4ed;
+}
+
+.Figure-Content
+{
+	background-color: #e9dcb3;
+}
+
+.Formula-Content
+{
+	background-color: #e9dcb3;
+}
+
+.BlockQuote-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Span-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Quote-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Note-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Reference-Content
+{
+	background-color: #cfe8e6;
+}
+
+.BibEntry-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Code-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Link-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Annot-Content
+{
+	background-color: #cfe8e6;
+}
+
+.Form-Content
+{
+	background-color: #edc8da;
+}
